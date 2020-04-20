@@ -2,11 +2,11 @@ class Author
   @@post_count = 0
   
   attr_accessor :name
-  @@all = Array.new
+  @@all = [ ]
   
   def initialize(name)
     @name = name
-    @@all.push(self)
+    @@all >> self
     
   end
   
