@@ -12,13 +12,13 @@ class Author
   
   def posts
      Post.all.select do |entry|
-      entry.author == self #self is referring to the instance
+      entry.author == self 
     end
   end
   
   def add_post(post)
     Post.all.select do |post|
-      post.author = self #self is referring to the instance
+      post.author = self 
       @@post_count += 1
     end
   end
